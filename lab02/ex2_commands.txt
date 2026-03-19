@@ -3,3 +3,22 @@
 # Lines starting with # are comments, feel free to add any to document your commands
 
 # Please add your commands below this line
+start
+next
+next
+next
+next
+step
+step
+print password
+finsh
+step
+next
+next
+p ments_len_req
+p length
+quit
+
+
+
+

@@ -1,6 +1,7 @@
 /* Include the system headers we need */
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 /* Include our header */
 #include "ex7_vector.h"
@@ -35,37 +36,34 @@ vector_t *bad_vector_new() {
     return retval;
 }
 
-/* Create a new vector with a size (length) of 1 and set its single component to zero... the
-   right way */
 vector_t *vector_new() {
     /* Declare what this function will return */
     vector_t *retval;
 
     /* First, we need to allocate memory on the heap for the struct */
-    retval = /* YOUR CODE HERE */
+    retval =(vector_t *) malloc(sizeof(vector_t));  
 
     /* Check our return value to make sure we got memory */
-    if (/* YOUR CODE HERE */) {
+    if (retval==NULL) {
         allocation_failed();
     }
 
     /* Now we need to initialize our data.
        Since retval->data should be able to dynamically grow,
        what do you need to do? */
-    retval->size = /* YOUR CODE HERE */;
-    retval->data = /* YOUR CODE HERE */;
+    retval->data = (int *)malloc(sizeof(int));
 
     /* Check the data attribute of our vector to make sure we got memory */
-    if (/* YOUR CODE HERE */) {
+    if (retval->data ==NULL) {
         free(retval);				//Why is this line necessary?
         allocation_failed();
     }
 
     /* Complete the initialization by setting the single component to zero */
-    /* YOUR CODE HERE */ = 0;
+    retval->size = 0;
 
     /* and return... */
-    return NULL; /* UPDATE RETURN VALUE */
+    return retval; /* UPDATE RETURN VALUE */
 }
 
 /* Return the value at the specified location/component "loc" of the vector */
@@ -89,6 +87,8 @@ int vector_get(vector_t *v, size_t loc) {
    Remember, you need to free up ALL the memory that was allocated. */
 void vector_delete(vector_t *v) {
     /* YOUR CODE HERE */
+    free(v->data);
+    free(v);
 }
 
 /* Set a value in the vector, allocating additional memory if necessary. 
