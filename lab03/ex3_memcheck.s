@@ -22,8 +22,10 @@ loop:
     addi t0 t0 4
     # Check if we are done
     # If not, loop
-    bge t2 t1 loop
+    bne t1 t2 loop
 
     # Exit the program
-    li a0 0
+    addi t0 t0 -40
+    mv a0 t0
+    jal free
     jal exit

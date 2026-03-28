@@ -27,7 +27,21 @@ main:
 # The return value should be stored in a0
 factorial:
     # YOUR CODE HERE
-
+    addi sp sp -8
+    sw a0 0(sp)
+    sw t0 4(sp)
+    bne a0 x0 RecursiveStep
+BaseCase:
+    li a0 1
+    j Epilogue
+RecursiveStep:
+    addi a0 -1
+    jal ra factorial
+    lw t0 0(sp)
+    mul a0 t0 a0
+Epilogue:
+    lw ra 4(sp)
+    addi sp sp 8
     # This is how you return from a function. You'll learn more about this later.
     # This should be the last line in your program.
     jr ra
