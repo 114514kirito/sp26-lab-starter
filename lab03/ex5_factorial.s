@@ -26,22 +26,22 @@ main:
 # a0 contains the number which we want to compute the factorial of
 # The return value should be stored in a0
 factorial:
-    # YOUR CODE HERE
-    addi sp sp -8
-    sw a0 0(sp)
-    sw ra 4(sp)
-    bne a0 x0 RecursiveStep
+    addi sp,sp,-16
+    sw a0,12(sp)
+    sw ra, 8(sp)
+    bne a0 ,x0,RecursiveStep 
 BaseCase:
-    li a0 1
+    addi a0,a0,1
     j Epilogue
 RecursiveStep:
-    addi a0 a0 -1
-    jal ra factorial
-    lw t0 0(sp)
-    mul a0 t0 a0
+    addi a0,a0,-1
+    jal ra, factorial
+    lw t0,12(sp)
+    mul a0,t0, a0
 Epilogue:
-    lw ra 4(sp)
-    addi sp sp 8
+    lw ra,8(sp)
+    addi sp,sp,16
+    # YOUR CODE HERE
     # This is how you return from a function. You'll learn more about this later.
     # This should be the last line in your program.
     jr ra
