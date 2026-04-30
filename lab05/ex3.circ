@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.c58792e" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.c58792e(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -95,5 +95,35 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(80,160)" name="Constant">
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="2" loc="(190,170)" name="Adder"/>
+    <comp lib="3" loc="(270,100)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(100,210)" to="(270,210)"/>
+    <wire from="(120,180)" to="(120,250)"/>
+    <wire from="(120,180)" to="(150,180)"/>
+    <wire from="(120,250)" to="(410,250)"/>
+    <wire from="(190,160)" to="(190,170)"/>
+    <wire from="(190,170)" to="(210,170)"/>
+    <wire from="(210,170)" to="(230,170)"/>
+    <wire from="(210,40)" to="(210,170)"/>
+    <wire from="(210,40)" to="(440,40)"/>
+    <wire from="(230,130)" to="(230,170)"/>
+    <wire from="(230,130)" to="(270,130)"/>
+    <wire from="(270,130)" to="(280,130)"/>
+    <wire from="(270,170)" to="(270,210)"/>
+    <wire from="(330,130)" to="(410,130)"/>
+    <wire from="(410,130)" to="(410,210)"/>
+    <wire from="(410,210)" to="(410,250)"/>
+    <wire from="(410,210)" to="(450,210)"/>
+    <wire from="(440,180)" to="(480,180)"/>
+    <wire from="(440,40)" to="(440,180)"/>
+    <wire from="(450,210)" to="(450,240)"/>
+    <wire from="(450,240)" to="(480,240)"/>
+    <wire from="(480,240)" to="(490,240)"/>
+    <wire from="(80,160)" to="(150,160)"/>
   </circuit>
 </project>

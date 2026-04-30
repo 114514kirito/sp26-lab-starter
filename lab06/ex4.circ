@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.c58792e" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.c58792e(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -96,6 +96,63 @@
       <a name="locked" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(180,210)" name="Tunnel">
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="0" loc="(220,150)" name="Tunnel">
+      <a name="label" val="B"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(230,90)" name="Tunnel">
+      <a name="label" val="A"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(350,370)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Mul"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(350,410)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="0" loc="(370,680)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Add"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(370,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="C"/>
+    </comp>
+    <comp lib="0" loc="(450,370)" name="Tunnel">
+      <a name="label" val="D"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(470,680)" name="Tunnel">
+      <a name="label" val="E"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(730,640)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="D"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(730,660)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(780,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="A"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(780,420)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="B"/>
+      <a name="width" val="8"/>
+    </comp>
     <comp lib="0" loc="(810,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
@@ -104,5 +161,33 @@
       <a name="output" val="true"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="0" loc="(810,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="E"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(850,650)" name="Tunnel">
+      <a name="label" val="Add"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(870,410)" name="Tunnel">
+      <a name="label" val="Mul"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="3" loc="(770,650)" name="Adder"/>
+    <comp lib="3" loc="(820,410)" name="Multiplier"/>
+    <comp lib="4" loc="(350,340)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp lib="4" loc="(370,650)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(170,150)" to="(220,150)"/>
+    <wire from="(170,210)" to="(180,210)"/>
+    <wire from="(170,90)" to="(230,90)"/>
+    <wire from="(410,370)" to="(450,370)"/>
+    <wire from="(430,680)" to="(470,680)"/>
+    <wire from="(770,650)" to="(850,650)"/>
+    <wire from="(820,410)" to="(870,410)"/>
   </circuit>
 </project>

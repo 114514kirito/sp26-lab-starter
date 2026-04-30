@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="3.8.0-61c.966ca7a" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.966ca7a(https://github.com/61c-teach/logisim-evolution).
+<project source="3.8.0-61c.f1d5ac0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0-61c.f1d5ac0(https://github.com/61c-teach/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -78,6 +78,9 @@
     <a name="circuit" val="num_checker"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(170,110)" name="Constant">
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="0" loc="(170,300)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="clk"/>
@@ -211,6 +214,11 @@
       <a name="bit9" val="0"/>
       <a name="incoming" val="32"/>
       <a name="spacing" val="5"/>
+    </comp>
+    <comp lib="0" loc="(270,120)" name="Constant"/>
+    <comp lib="0" loc="(270,140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="clk"/>
     </comp>
     <comp lib="0" loc="(290,270)" name="Tunnel">
       <a name="label" val="num"/>
@@ -346,6 +354,9 @@
     <comp lib="1" loc="(720,680)" name="AND Gate"/>
     <comp lib="1" loc="(720,840)" name="AND Gate"/>
     <comp lib="1" loc="(820,760)" name="OR Gate"/>
+    <comp lib="3" loc="(210,100)" name="Adder">
+      <a name="width" val="16"/>
+    </comp>
     <comp lib="3" loc="(620,280)" name="Comparator">
       <a name="width" val="1"/>
     </comp>
@@ -370,17 +381,32 @@
     <comp lib="3" loc="(620,880)" name="Comparator">
       <a name="width" val="30"/>
     </comp>
+    <comp lib="4" loc="(290,70)" name="Register">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="width" val="16"/>
+    </comp>
+    <comp lib="8" loc="(295,62)" name="Text">
+      <a name="text" val="num_cycles"/>
+    </comp>
+    <wire from="(130,40)" to="(130,90)"/>
+    <wire from="(130,40)" to="(410,40)"/>
+    <wire from="(130,90)" to="(170,90)"/>
     <wire from="(170,300)" to="(290,300)"/>
     <wire from="(170,400)" to="(210,400)"/>
     <wire from="(170,500)" to="(210,500)"/>
     <wire from="(170,610)" to="(210,610)"/>
     <wire from="(180,270)" to="(290,270)"/>
+    <wire from="(210,100)" to="(290,100)"/>
     <wire from="(230,350)" to="(290,350)"/>
     <wire from="(230,400)" to="(290,400)"/>
     <wire from="(230,450)" to="(290,450)"/>
     <wire from="(230,500)" to="(290,500)"/>
     <wire from="(230,560)" to="(290,560)"/>
     <wire from="(230,610)" to="(290,610)"/>
+    <wire from="(270,120)" to="(290,120)"/>
+    <wire from="(270,140)" to="(290,140)"/>
+    <wire from="(350,100)" to="(410,100)"/>
+    <wire from="(410,40)" to="(410,100)"/>
     <wire from="(540,300)" to="(560,300)"/>
     <wire from="(540,370)" to="(560,370)"/>
     <wire from="(540,450)" to="(560,450)"/>
